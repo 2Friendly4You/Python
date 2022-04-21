@@ -96,5 +96,4 @@ while True:
     if counter == 500:
         repress_mouse()
         counter = 0
-        #test = d.screenshot()
     # print("FPS: ", 1.0 / (time.time() - start_time))
