@@ -14,7 +14,8 @@ for i in range(len(lines)):
         line = line.replace("ue", "ü")
     lines[i] = line
 
-print(lines)
+#print(lines)
+print('Done')
 
 def addToClipBoard(text):
     command = 'echo ' + text.strip() + '| clip'
@@ -27,7 +28,8 @@ while True:
         if char in line:
             liste.append(line)
     liste.sort(reverse=True, key=len)
-    addToClipBoard(liste[0])
+    if len(liste) >= 1:
+        addToClipBoard(liste[0])
     hoch = 0
     for x in liste:
         if hoch < 10:
